@@ -1,4 +1,4 @@
-package idv.danny.emailauth;
+package sp.senior.wd;
 
 import org.junit.Test;
 
