@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="idv.danny.emailauth.Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="472dp"
+        android:layout_height="727dp"
+        android:layout_marginBottom="4dp"
+        android:background="@mipmap/screen0"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/screen0" />
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="721dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="118dp" />
+
+        <TextView
+            android:id="@+id/greet"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:text="Hi!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:fontFamily="@font/amaranth" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome to NYC."
+
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:fontFamily="@font/amaranth" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="E-mail"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Password"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/ellipse"
+            android:baselineAligned="false"
+            android:includeFontPadding="true"
+            android:onClick="login"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimary"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="445dp" />
+
+        <Button
+            android:id="@+id/forgatPassword"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="forgetPassword"
+            android:text="Forget Password"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="normal|italic"
+            tools:includeFontPadding="true" />
+
+        <Button
+            android:id="@+id/createAcctount"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createNewAccount"
+            android:text="Create New Account"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:id="@+id/sign_out"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signOut"
+            android:text="Sign Out"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button" />
+
+        <TextView
+            android:id="@+id/loginStatus"
+            android:layout_width="209dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="4dp"
+            android:text="Login Status:未登入"
+            app:layout_constraintBottom_toTopOf="@+id/createAcctount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        \
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

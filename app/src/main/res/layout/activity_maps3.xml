@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity2" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="@dimen/places_autocomplete_powered_by_google_height"
+        android:layout_height="@dimen/places_autocomplete_powered_by_google_height"
+        android:background="@drawable/marker_restaurant"
+        android:onClick="nearBySearch"
+        android:text="search" />
+
+</android.support.design.widget.CoordinatorLayout>

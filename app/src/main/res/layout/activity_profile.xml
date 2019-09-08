@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/tv_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Nickname"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tv_14"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tv_13"
+        app:layout_constraintTop_toBottomOf="@+id/tv_13" />
+
+    <TextView
+        android:id="@+id/tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:onClick="setTag1"
+        android:text="bridge"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="cathedral"
+        app:layout_constraintStart_toEndOf="@+id/tag1"
+        app:layout_constraintTop_toTopOf="@+id/tag1" />
+
+    <TextView
+        android:id="@+id/tag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="culture"
+        app:layout_constraintStart_toEndOf="@+id/tag2"
+        app:layout_constraintTop_toTopOf="@+id/tag2" />
+
+    <TextView
+        android:id="@+id/tag4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="food"
+        app:layout_constraintStart_toEndOf="@+id/tag3"
+        app:layout_constraintTop_toTopOf="@+id/tag2" />
+
+    <TextView
+        android:id="@+id/tag5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="botany"
+        app:layout_constraintStart_toEndOf="@+id/tag4"
+        app:layout_constraintTop_toTopOf="@+id/tag2" />
+
+    <TextView
+        android:id="@+id/tag6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="history"
+        app:layout_constraintStart_toStartOf="@+id/tag1"
+        app:layout_constraintTop_toBottomOf="@+id/tag1" />
+
+    <TextView
+        android:id="@+id/tag7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="indoor"
+        app:layout_constraintStart_toEndOf="@+id/tag6"
+        app:layout_constraintTop_toBottomOf="@+id/tag2" />
+
+    <TextView
+        android:id="@+id/tag11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="shopping"
+        app:layout_constraintStart_toStartOf="@+id/tag6"
+        app:layout_constraintTop_toBottomOf="@+id/tag6" />
+
+    <TextView
+        android:id="@+id/tag12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="show"
+        app:layout_constraintStart_toEndOf="@+id/tag11"
+        app:layout_constraintTop_toBottomOf="@+id/tag7" />
+
+    <TextView
+        android:id="@+id/tag13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="sports"
+        app:layout_constraintStart_toEndOf="@+id/tag12"
+        app:layout_constraintTop_toBottomOf="@+id/tag8" />
+
+    <TextView
+        android:id="@+id/tag9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="museum"
+        app:layout_constraintStart_toEndOf="@+id/tag8"
+        app:layout_constraintTop_toBottomOf="@+id/tag4" />
+
+    <TextView
+        android:id="@+id/tag8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="landmark"
+        app:layout_constraintStart_toEndOf="@+id/tag7"
+        app:layout_constraintTop_toBottomOf="@+id/tag3" />
+
+    <TextView
+        android:id="@+id/tag17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="zoo"
+        app:layout_constraintStart_toEndOf="@+id/tag16"
+        app:layout_constraintTop_toBottomOf="@+id/tag12" />
+
+    <TextView
+        android:id="@+id/tag16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="workshop"
+        app:layout_constraintStart_toStartOf="@+id/tag11"
+        app:layout_constraintTop_toBottomOf="@+id/tag11" />
+
+    <TextView
+        android:id="@+id/tag15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="view"
+        app:layout_constraintStart_toEndOf="@+id/tag14"
+        app:layout_constraintTop_toBottomOf="@+id/tag10" />
+
+    <TextView
+        android:id="@+id/tag10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="park"
+        app:layout_constraintStart_toEndOf="@+id/tag9"
+        app:layout_constraintTop_toBottomOf="@+id/tag5" />
+
+    <TextView
+        android:id="@+id/tag14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="theater"
+        app:layout_constraintStart_toEndOf="@+id/tag13"
+        app:layout_constraintTop_toBottomOf="@+id/tag9" />
+
+</android.support.constraint.ConstraintLayout>

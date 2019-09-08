@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="472dp"
+        android:layout_height="727dp"
+        android:layout_marginBottom="4dp"
+        android:background="@mipmap/screen0"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/screen0" />
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="721dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="118dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:text="Hi!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:fontFamily="@font/amaranth" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome to NYC."
+
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:fontFamily="@font/amaranth" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="E-mail"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+         />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Password"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+
+        <Button
+            android:id="@+id/button_1"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/ellipse"
+            android:baselineAligned="false"
+            android:includeFontPadding="true"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimary"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="445dp" />
+
+        \
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

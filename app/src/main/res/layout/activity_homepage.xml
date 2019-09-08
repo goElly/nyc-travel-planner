@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/screen0"
+    tools:context=".homepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="61dp"
+            android:layout_height="238dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/my_account"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="schedule"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="27dp"
+                    android:layout_height="18dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_plan"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/plan_a_trip"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="27dp"
+                    android:layout_height="18dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/start_an_even"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:clipChildren="false"
+    android:orientation="vertical"
+
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="527dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/address1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/address2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/address3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/address4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/address5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="Button" />
+
+        <ListView
+            android:id="@+id/lv1"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8:00 AM"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/expletus_sans" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/activity_1"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false">
+
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 AM"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/expletus_sans" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/activity_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false">
+
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:00 PM"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/expletus_sans" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/activity_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false">
+
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3:30 PM"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/expletus_sans" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/activity_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false">
+
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6:00 PM"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/expletus_sans" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/activity_5"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false">
+
+                </android.support.v4.view.ViewPager>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

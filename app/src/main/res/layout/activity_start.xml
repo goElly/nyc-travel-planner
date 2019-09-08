@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/digital"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@mipmap/bga"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView1_1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/nickname_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <TextView
+            android:id="@+id/uid_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/upload_title"
+            style="@android:style/Widget.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="@string/title_activity_maps"
+            android:inputType="text"
+            android:text="Title"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/description"
+            app:layout_constraintEnd_toEndOf="@+id/description"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/description" />
+
+
+        <EditText
+            android:id="@+id/description"
+            style="@android:style/Widget.EditText"
+            android:layout_width="211dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="請輸入留言"
+            android:inputType="textPersonName"
+            android:text="Brief description"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Date: "
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/description" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Email"
+            app:layout_constraintBottom_toTopOf="@+id/location"
+            app:layout_constraintEnd_toEndOf="@+id/upload_date"
+            app:layout_constraintStart_toStartOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/upload_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="date"
+            android:text="choose a date"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="@+id/description"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="From"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintStart_toStartOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/timeFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="time"
+            android:text="00:00"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="To"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/timeFrom"
+            app:layout_constraintTop_toTopOf="@+id/timeFrom" />
+
+        <TextView
+            android:id="@+id/timeTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="time2"
+            android:text="00:00"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+        <Button
+            android:id="@+id/upload"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="newMessage"
+            android:text="START"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Location"
+            app:layout_constraintBottom_toTopOf="@+id/upload"
+            app:layout_constraintEnd_toEndOf="@+id/email"
+            app:layout_constraintStart_toStartOf="@+id/email" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="85dp" />
+
+</android.support.constraint.ConstraintLayout>
